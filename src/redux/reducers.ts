@@ -1,4 +1,4 @@
-const SETWORD = 'search/setWord';
+const SET_WORD = 'search/setWord';
 
 interface SetWordAction {
   type: string;
@@ -6,7 +6,7 @@ interface SetWordAction {
 }
 
 export function setSearchWord(currentWord: string) {
-  return { type: SETWORD, payload: currentWord };
+  return { type: SET_WORD, payload: currentWord };
 }
 
 const INITIAL_STATE = {
